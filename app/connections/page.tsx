@@ -40,7 +40,7 @@ export default function ConnectionsPage() {
     if (connectionType === 'show-docs') {
       return <Docs />
     }
-    if (connectionType === 'show-db') {
+    if (connectionType === 'show-database') {
       return <Webhook />
     }
     return (
