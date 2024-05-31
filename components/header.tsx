@@ -53,7 +53,7 @@ export function Header() {
       <div className="flex items-center">
         <SuperBrainLogo />
       </div>
-      <div className="flex items-center justify-end space-x-2">
+      <div className="items-center justify-end space-x-2 hidden lg:flex">
         <Link
           href={'/dashboard'}
           className={cn(buttonVariants({ variant: 'outline' }))}

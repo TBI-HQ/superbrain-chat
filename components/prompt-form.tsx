@@ -39,6 +39,7 @@ export function PromptForm({
 
   return (
     <form
+      className='px-4'
       ref={formRef}
       onSubmit={async (e: any) => {
         e.preventDefault()
