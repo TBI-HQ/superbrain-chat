@@ -12,7 +12,7 @@ export const Hero = () => {
       <div className="hero-content-action">
         <div className="content max-w-[460px] mb-8">
           <h1 className="mb-8 text-5xl font-bold ">
-            Ask Anything. Make Impact.
+            SuperBrain Powers your Organisation
           </h1>
           <p className="text-[#71717a] text-xl">
             Accelerate decision with actionable insights from your data to support informed decisions and strategic success.
