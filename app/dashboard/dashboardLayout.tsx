@@ -9,11 +9,12 @@ import { SuperBrainLogo } from '@/components/assets/logo/SuperBrain'
 import { cn } from '@/lib/utils'
 import { Logout } from '@/components/user/logout'
 import { SidebarMenu } from '@/components/sidebarMenu/index'
+import { content } from '@/lib/constants'
 
 export const metadata = {
-  title: 'Next.js App Router + NextAuth + Tailwind CSS',
+  title: content.superbrain,
   description:
-    'A user admin dashboard configured with Next.js, Postgres, NextAuth, Tailwind CSS, TypeScript, and Prettier.'
+    ''
 }
 
 export default function DashboardLayout({
