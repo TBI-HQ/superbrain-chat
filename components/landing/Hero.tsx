@@ -12,11 +12,10 @@ export const Hero = () => {
       <div className="hero-content-action">
         <div className="content max-w-[460px] mb-8">
           <h1 className="mb-8 text-5xl font-bold ">
-            SuperBrain® powers your organisation
+            Ask Anything. Make Impact.
           </h1>
           <p className="text-[#71717a] text-xl">
-            Accelerate decision making speed and quality at work. Network Inc,
-            use SuperBrain to power their data-drive business intelligence.
+            Accelerate decision with actionable insights from your data to support informed decisions and strategic success.
           </p>
         </div>
         <div className="cta-btn-actions flex gap-2">
