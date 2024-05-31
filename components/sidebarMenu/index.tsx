@@ -20,7 +20,7 @@ export const SidebarMenu = () => {
             <RiUser4Line size={16} />
             Access
           </NavItem>
-          <NavItem>
+          <NavItem href='/connections'>
             <RiExchange2Line size={16} />
             Connections
           </NavItem>

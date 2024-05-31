@@ -28,7 +28,7 @@ export const ChooseConnection = ({
     },
     {
       title: 'Docs',
-      key: 'show-dosc',
+      key: 'show-docs',
       icon: <RiArticleLine />
     },
     {

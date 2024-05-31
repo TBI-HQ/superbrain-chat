@@ -1,14 +1,16 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
 import AddUserLayout from '../add-user/addUserLayout'
-import { PlusIcon } from '@radix-ui/react-icons'
-import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
-import { ConnectionCards } from '@/components/connections/ConnectionCard'
 import { ChooseConnection } from '@/components/connections'
 import { ShowConnections } from '@/components/connections/ShowConnections'
 import { ShowCSV } from '@/components/connections/ShowCSV'
+import { RiArrowLeftSLine } from '@remixicon/react'
+import { Json } from '@/components/connections/Json'
+import { Webhook } from '@/components/connections/Webhook'
+import { Api } from '@/components/connections/Api'
+import { Docs } from '@/components/connections/Docs'
+import { AddDB } from '@/components/connections/AddDB'
 
 export default function ConnectionsPage() {
   const [isAddConnection, setIsAddConnection] = useState(false)
@@ -16,10 +18,30 @@ export default function ConnectionsPage() {
 
   const getConnectionLayout = (type: string) => {
     if (connectionType === 'show-connection-cards') {
-      return <ChooseConnection type={connectionType} handleConnection={setConnectionType}/>
+      return (
+        <ChooseConnection
+          type={connectionType}
+          handleConnection={setConnectionType}
+        />
+      )
     }
-    if(connectionType === 'show-csv') {
-        return <ShowCSV />
+    if (connectionType === 'show-csv') {
+      return <ShowCSV />
+    }
+    if (connectionType === 'show-json') {
+      return <Json />
+    }
+    if (connectionType === 'show-webhook') {
+      return <AddDB />
+    }
+    if (connectionType === 'show-api') {
+      return <Api />
+    }
+    if (connectionType === 'show-docs') {
+      return <Docs />
+    }
+    if (connectionType === 'show-db') {
+      return <Webhook />
     }
     return (
       <ShowConnections
@@ -28,5 +50,18 @@ export default function ConnectionsPage() {
     )
   }
 
-  return <AddUserLayout>{getConnectionLayout(connectionType)}</AddUserLayout>
+  return (
+    <AddUserLayout>
+      {/* {connectionType !== 'show-connection' && (
+        <div
+          className="p-6 text-sm flex items-center cursor-pointer"
+          onClick={() => setConnectionType('show-connection')}
+        >
+          <RiArrowLeftSLine size={16} />
+          <span className="ml-1">Back</span>
+        </div>
+      )} */}
+      {getConnectionLayout(connectionType)}
+    </AddUserLayout>
+  )
 }
