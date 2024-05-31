@@ -5,6 +5,7 @@ import {
   RiInbox2Line,
   RiPieChartLine,
   RiSettingsLine,
+  RiShieldKeyholeLine,
   RiShieldStarLine,
   RiStackLine,
   RiUser4Line
@@ -19,29 +20,33 @@ export const SidebarMenu = () => {
             <RiUser4Line size={16} />
             Access
           </NavItem>
-          <NavItem href="/">
+          <NavItem>
             <RiExchange2Line size={16} />
             Connections
           </NavItem>
-          <NavItem href="/">
+          <NavItem>
             <RiPieChartLine size={16} />
             Analytics
           </NavItem>
-          <NavItem href="/">
+          <NavItem>
             <RiInbox2Line size={16} />
             Log Reports
           </NavItem>
-          <NavItem href="/">
+          <NavItem href="/organisation">
             <RiShieldStarLine size={16} />
-            Organization
+            Organisation
           </NavItem>
-          <NavItem href="/">
+          <NavItem>
             <RiSettingsLine size={16} />
             Configuration
           </NavItem>
-          <NavItem href="/">
+          <NavItem>
             <RiBankCardLine size={16} />
             Manage Billing
+          </NavItem>
+          <NavItem>
+            <RiShieldKeyholeLine size={16} />
+            Security
           </NavItem>
         </div>
         <div className="w-full mb-2">
