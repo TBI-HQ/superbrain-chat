@@ -9,12 +9,12 @@ import { useRouter } from 'next/navigation'
 export const Navbar = () => {
   const router = useRouter()
   return (
-    <header className="border-b-[1px] border-[#ececee]">
+    <header className="border-b-[1px] border-[#ececee] px-4 lg:px-0">
       <nav className="stick top-10 z-50 flex justify-between items-center max-w-5xl mx-auto space-x-8 h-[60px]">
         <SuperBrainLogo />
         <Button variant="default" onClick={() => router.push('/login')}>
           <PinRightIcon />
-          <span className="hidden ml-2 md:flex font-bold">Sign in</span>
+          <span className="ml-2 md:flex font-bold">Sign in</span>
         </Button>
       </nav>
     </header>

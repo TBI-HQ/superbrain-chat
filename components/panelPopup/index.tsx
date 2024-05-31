@@ -2,7 +2,7 @@ import { RiArrowRightSLine } from '@remixicon/react'
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
 
-export const PanelPop = ({
+export const PanelPopUp = ({
   isRestricted,
   handleKey,
   handleAccess
@@ -14,7 +14,7 @@ export const PanelPop = ({
   return (
     <div className="w-full h-screen grid place-items-center fixed backdrop-blur z-50 bg-white/50">
       <div className="access-pop flex items-center gap-2">
-        <Input type="text" placeholder="Access Key" onChange={handleKey} />
+        <Input type="password" placeholder="Access Key" onChange={handleKey} />
         <Button onClick={handleAccess} className="p-2">
           <RiArrowRightSLine />
         </Button>

@@ -19,7 +19,7 @@ export const CalBooking = () => {
       data-cal-link="superbrain/get-started"
       data-cal-config='{"layout":"month_view"}'
     >
-      <span className="hidden md:flex font-bold">Contact Sales</span>
+      <span className="md:flex font-bold">Contact Sales</span>
     </Button>
   )
 }

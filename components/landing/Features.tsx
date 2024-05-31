@@ -35,9 +35,9 @@ export const Features = () => {
   ]
 
   return (
-    <div className="features-section mb-24 max-w-5xl mx-auto">
+    <div className="features-section mb-24 max-w-5xl mx-auto px-4 lg:px-0">
       <h2 className="text-2xl font-bold mb-6">Access. Accelerate.</h2>
-      <div className="grid grid-cols-3 gap-7">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-7">
         {cards.map((item, index) => (
           <FeatureCard
             key={index}

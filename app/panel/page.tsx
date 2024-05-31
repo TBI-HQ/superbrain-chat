@@ -8,7 +8,7 @@ import { users } from '@/lib/user'
 import { Button } from '@/components/ui/button'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
-import { PanelPop } from '@/components/panelPopup'
+import { PanelPopUp } from '@/components/panelPopup'
 
 export default function PanelPage() {
   const router = useRouter()
@@ -28,7 +28,7 @@ export default function PanelPage() {
   return (
     <>
       {!isCanAccess ? (
-        <PanelPop handleKey={handleKey} handleAccess={handleAccess} />
+        <PanelPopUp handleKey={handleKey} handleAccess={handleAccess} />
       ) : null}
       <PanelLayout>
         <main className="flex flex-1 flex-col p-4 md:p-6">

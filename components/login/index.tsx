@@ -70,8 +70,8 @@ export default function Login() {
   };
 
   return (
-    <div className="grid place-items-center h-[100vh] bg-white">
-      <div className="w-full max-w-md overflow-hidden rounded-2xl text-xl border border-gray-100 p-12">
+    <div className="grid place-items-center h-[100vh] bg-white px-4 lg:px-0">
+      <div className="w-full max-w-md overflow-hidden rounded-2xl text-sm lg:text-xl border border-gray-100 p-6 lg:p-12">
         <div className="text-center">
           <div className="logo flex justify-center mb-8">
             <SuperBrainLogo  width="190px"/>
